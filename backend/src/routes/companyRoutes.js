@@ -26,7 +26,6 @@ const upload = multer({
   },
 })
 
-// All routes require authentication
 router.use(authenticateToken)
 
 router.post("/register", validateCompanyProfile, handleValidationErrors, registerCompany)
