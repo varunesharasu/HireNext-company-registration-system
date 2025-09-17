@@ -12,7 +12,6 @@ import { validateCompanyProfile, handleValidationErrors } from "../middleware/va
 
 const router = express.Router()
 
-// Configure multer for file uploads
 const upload = multer({
   dest: "uploads/",
   limits: {
