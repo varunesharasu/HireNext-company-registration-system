@@ -6,7 +6,6 @@ describe("Company Endpoints", () => {
   let userId
 
   beforeAll(async () => {
-    // Register and login a user to get auth token
     const userData = {
       email: "company@example.com",
       password: "Password123!",
