@@ -46,7 +46,6 @@ describe("Authentication Endpoints", () => {
 
       await request(app).post("/api/auth/register").send(userData)
 
-      // Then login
       const loginData = {
         email: "login@example.com",
         password: "Password123!",
