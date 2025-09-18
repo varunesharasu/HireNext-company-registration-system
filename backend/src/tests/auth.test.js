@@ -36,7 +36,6 @@ describe("Authentication Endpoints", () => {
 
   describe("POST /api/auth/login", () => {
     it("should login user with valid credentials", async () => {
-      // First register a user
       const userData = {
         email: "login@example.com",
         password: "Password123!",
