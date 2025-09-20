@@ -27,7 +27,6 @@ app.use(express.urlencoded({ extended: true, limit: "10mb" }))
 app.use("/api/auth", authRoutes)
 app.use("/api/company", companyRoutes)
 
-// Health check endpoint
 app.get("/api/health", (req, res) => {
   res.json({ status: "OK", message: "Server is running" })
 })
