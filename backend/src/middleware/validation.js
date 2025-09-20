@@ -49,7 +49,6 @@ export const handleValidationErrors = (req, res, next) => {
     return next(createError(400, "Validation failed", { errors: errors.array() }))
   }
 
-  // Sanitize text inputs
   const sanitizeOptions = {
     allowedTags: [],
     allowedAttributes: {},
